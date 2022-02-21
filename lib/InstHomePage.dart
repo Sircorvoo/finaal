@@ -47,7 +47,7 @@ class InstHomePage extends StatelessWidget {
                         height: 15,
                       ),
                       InatMainBtn(Icons.settings, 'assets/PPL.png',
-                          'Addd Community Serveice', 60),
+                          'Addd Omar Serveice', 60),
                       SizedBox(height: 16),
                       InatMainBtn(Icons.settings, 'assets/Token.png',
                           'Add Reword Serveice', 40),
