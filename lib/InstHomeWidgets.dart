@@ -125,7 +125,7 @@ class InatMainBtn extends StatelessWidget {
                 size: 32,
               ),
               Text(
-                'Fuck u',
+                'Fuck omar <#',
                 style: TextStyle(fontSize: 10, color: Colors.white),
               ),
             ],
