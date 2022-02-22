@@ -3,6 +3,7 @@ import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
+import 'OmarsWidgets.dart';
 
 class InstLoginPage extends StatelessWidget {
   @override
@@ -37,15 +38,13 @@ class InstLoginPage extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(
-                        children: [Header('assets/PPL.png','Add Community Serveice')],
+                        children: [Header('assets/PPL.png','Login')],
                       ),
                       SizedBox(
                         height: 15,
                       ),
-                      CSfield('Title',''),
-                      CSfield('Classification',''),
-                      CSfield('Description',''),
-                      CSfield('Community Serveice Banner','uploud Image'),
+                      CSfieldEmail('Email',''),
+                      CSfieldEmail('Password',''),
 
                     ],
                   ),
