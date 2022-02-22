@@ -20,6 +20,7 @@ class InstAddCs extends StatelessWidget {
                 end: Alignment.bottomLeft,
               ),
             ),
+
             child: Column(
               children: [
                 Container(
@@ -46,6 +47,11 @@ class InstAddCs extends StatelessWidget {
                       SizedBox(
                         height: 15,
                       ),
+                      CSfield('Title',''),
+                      CSfield('Classification',''),
+                      CSfield('Description',''),
+                      CSfield('Community Serveice Banner','uploud Image'),
+
                     ],
                   ),
 
@@ -59,3 +65,4 @@ class InstAddCs extends StatelessWidget {
     );
   }
 }
+

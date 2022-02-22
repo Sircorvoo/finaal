@@ -32,6 +32,8 @@ class InstLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final LengthSized = MediaQuery.of(context).size.height;
+    final WidthSized = MediaQuery.of(context).size.width;
     return Container(
       decoration: BoxDecoration(
           boxShadow: [
@@ -47,8 +49,8 @@ class InstLogo extends StatelessWidget {
           color: Color(0xFFE9E9E7),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(26), bottomRight: Radius.circular(26))),
-      width: 115,
-      height: 90,
+      width: WidthSized*0.35,
+      height: LengthSized*0.13,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Image.asset(
@@ -65,14 +67,38 @@ class InatMainBtn extends StatelessWidget {
   final String _title;
   final double _sized;
 
+  //final Length = MediaQuery.of(context).size.height ;
+
+
   InatMainBtn(this._icon,this._image,this._title,this._sized);
 
   @override
   Widget build(BuildContext context) {
+    final LengthSized = MediaQuery.of(context).size.height;
+    final WidthSized = MediaQuery.of(context).size.width;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
+          width: WidthSized*0.65,
+          height: LengthSized*0.129,
+          decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black38,
+
+                  spreadRadius: 0,
+                  blurRadius: 1,
+                  offset: Offset(0, 1.25), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              border: Border.all(color: Color(0xFF898274), width: 1.5),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(11),
+                bottomLeft: Radius.circular(11),
+              )),
           child: Row(
             children: [
               SizedBox(
@@ -96,26 +122,12 @@ class InatMainBtn extends StatelessWidget {
               )
             ],
           ),
-          decoration: BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black38,
 
-                  spreadRadius: 0,
-                  blurRadius: 1,
-                  offset: Offset(0, 1.25), // changes position of shadow
-                ),
-              ],
-              color: Colors.white,
-              border: Border.all(color: Color(0xFF898274), width: 1.5),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(11),
-                bottomLeft: Radius.circular(11),
-              )),
-          width: 230,
-          height: 75,
+
         ),
         Container(
+          width: WidthSized*0.22,
+          height: LengthSized*0.129,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -146,8 +158,8 @@ class InatMainBtn extends StatelessWidget {
                 topRight: Radius.circular(11),
                 bottomRight: Radius.circular(11)),
           ),
-          width: 80,
-          height: 75,
+          //width: 80,
+
         )
       ],
     );

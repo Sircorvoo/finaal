@@ -21,9 +21,6 @@ class InstHomePage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                decoration: BoxDecoration(
-                  
-                ),
                 child: wLogo(),
               ),
               SizedBox(
@@ -36,7 +33,6 @@ class InstHomePage extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(26),
                         topRight: Radius.circular(26)),
-
                   ),
                   child: Column(
                     children: [
