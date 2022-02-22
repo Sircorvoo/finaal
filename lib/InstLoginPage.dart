@@ -45,7 +45,7 @@ class InstLoginPage extends StatelessWidget {
                       ),
                       CSfieldEmail('Email',''),
                       CSfieldEmail('Password',''),
-                      CSButton(),
+                      CSButton('Login'),
                     ],
                   ),
                 ),

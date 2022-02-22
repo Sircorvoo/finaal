@@ -5,7 +5,6 @@ import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
-
 class InstRegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,37 +19,43 @@ class InstRegisterPage extends StatelessWidget {
               end: Alignment.bottomLeft,
             ),
           ),
-          child: Column(
-            children: [
-              Container(
-                child: wLogo(),
-              ),
-              SizedBox(
-                height: 75,
-              ),
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF7F6F5),
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(26),
-                        topRight: Radius.circular(26)),
+
+          child: Padding(
+            padding: const EdgeInsets.all(0),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    child: wLogo(),
                   ),
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 15,
-                      ),
-                      CSfield('Particpent Name',''),
-                      CSfieldEmail('Email',''),
-                      CSfield('Password',''),
-                      CSPasswordFiled('Phone Number',''),
-                      CSButton(),
-                    ],
+                  SizedBox(
+                    height: 75,
                   ),
-                ),
-              )
-            ],
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color(0xFFF7F6F5),
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(26),
+                          topRight: Radius.circular(26)),
+                    ),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 15,
+                        ),
+                        CSfield('Institution Name', ''),
+                        CSfieldEmail('Email', ''),
+                        CSPhoneFiled('Phone Number', ''),
+                        CSfield('Postal Code', ''),
+                        CSPassword('Password', ''),
+                        CSPassword('Confirm Password', ''),
+                        CSButton('Create Account'),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           //child: InstHomePageWidgets(),
         ),
