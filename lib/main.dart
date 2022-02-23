@@ -4,9 +4,10 @@ import 'InstHomePage.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
 import 'OmarsWidgets.dart';
-
+import 'InstPage1.dart';
+import 'InstAddRewardedService.dart';
 void main() => runApp(MaterialApp(
-  home: InstRegisterPage(),
+  home: InstAddCS(),
 ));
 
 

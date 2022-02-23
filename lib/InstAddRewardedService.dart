@@ -5,7 +5,7 @@ import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
-class InstRegisterPage extends StatelessWidget {
+class InstAddRewardedService extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,17 +40,17 @@ class InstRegisterPage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
+                        Row(
+                          children: [Header('assets/Token.png','Add Rewarded Serveice')],
+                        ),
                         SizedBox(
                           height: 15,
                         ),
-                        CSfield('Institution Name', ''),
-                        CSfieldEmail('Email', ''),
-                        CSPhoneFiled('Phone Number', ''),
-                        CSfield('Postal Code', ''),
-                        CSPassword('Password', ''),
-                        CSPassword('Confirm Password', ''),
-                        CSButton('Create Account',0xFFF7F6F5,0xFF9B9A93),
-                        
+                        CSfield('Reward Name', ''),
+                        CSPhoneFiled('Reward Point', ''),
+                        CSDateFiled('Expire Date', ''),
+                        CSfield('Descrption', ''),
+                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93),
                       ],
                     ),
                   ),

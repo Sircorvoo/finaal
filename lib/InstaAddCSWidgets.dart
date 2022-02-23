@@ -26,7 +26,7 @@ class Header extends StatelessWidget {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(26),
                 bottomRight: Radius.circular(26))),
-        width: LengthSized * 0.28,
+        width: LengthSized * 0.30,
         height: WidthSized * 0.15,
         child: Opacity(
           opacity: 0.6,
