@@ -11,15 +11,12 @@ class wLogo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
-              child: Image.asset(
-            'assets/wlogo.png',
-            width: 100,
-            height: 100,
-          ),
-
-
+            child: Image.asset(
+              'assets/wlogo.png',
+              width: 100,
+              height: 100,
+            ),
           )
-
         ],
       ),
     );
@@ -49,8 +46,8 @@ class InstLogo extends StatelessWidget {
           color: Color(0xFFE9E9E7),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(26), bottomRight: Radius.circular(26))),
-      width: WidthSized*0.35,
-      height: LengthSized*0.13,
+      width: WidthSized * 0.35,
+      height: LengthSized * 0.13,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Image.asset(
@@ -69,8 +66,7 @@ class InatMainBtn extends StatelessWidget {
 
   //final Length = MediaQuery.of(context).size.height ;
 
-
-  InatMainBtn(this._icon,this._image,this._title,this._sized);
+  InatMainBtn(this._icon, this._image, this._title, this._sized);
 
   @override
   Widget build(BuildContext context) {
@@ -81,8 +77,8 @@ class InatMainBtn extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: WidthSized*0.65,
-          height: LengthSized*0.129,
+          width: WidthSized * 0.65,
+          height: LengthSized * 0.129,
           decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -122,12 +118,10 @@ class InatMainBtn extends StatelessWidget {
               )
             ],
           ),
-
-
         ),
         Container(
-          width: WidthSized*0.22,
-          height: LengthSized*0.129,
+          width: WidthSized * 0.22,
+          height: LengthSized * 0.129,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -159,7 +153,6 @@ class InatMainBtn extends StatelessWidget {
                 bottomRight: Radius.circular(11)),
           ),
           //width: 80,
-
         )
       ],
     );

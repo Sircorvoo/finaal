@@ -4,6 +4,7 @@ import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
+import 'ZiyadWidgets.dart';
 import 'waleedWidgets.dart';
 
 class InstEditpage extends StatelessWidget {
@@ -42,14 +43,15 @@ class InstEditpage extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
-                          children: [Header('assets/PPL.png','Add Community Serveice')],
+                          children: [
+                            Header('assets/PPL.png', 'Add Community Serveice')
+                          ],
                         ),
                         SizedBox(
                           height: 20,
                         ),
-
-                        CSprofile(1,'Organizing the vaccine center' , 'assets/MOH.png' ,'Riyadh' , '24 Nov' , '24 Nov')
-
+                        CSmainField(1, 'Organizing the vaccine center',
+                            'assets/MOH.png', 'Riyadh', '24 Nov', '24 Nov')
                       ],
                     ),
                   ),
