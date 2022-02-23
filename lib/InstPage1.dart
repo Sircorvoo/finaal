@@ -5,7 +5,9 @@ import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
-class InstLoginPage extends StatelessWidget {
+class InstPage1 extends StatelessWidget {
+  const InstPage1({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,35 +23,39 @@ class InstLoginPage extends StatelessWidget {
           ),
           child: Column(
             children: [
+              SizedBox(
+                height: 100,
+              ),
               Container(
-                child: wLogo(),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        child: Image.asset(
+                          'assets/wlogo.png',
+                          width: 150,
+                          height: 150,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ),
               SizedBox(
-                height: 75,
+                height: 50,
               ),
               Expanded(
                 child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF7F6F5),
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(26),
-                        topRight: Radius.circular(26)),
-                  ),
                   child: Column(
                     children: [
-                      Row(
-                        children: [Header('assets/PPL.png','Login as Institution')],
-                      ),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      CSfieldEmail('Email',''),
-                      CSPassword('Password', ''),
-                      CSButton('Login',0xFFF7F6F5,0xFF9B9A93),
+                      CSButton('Institution Sign In', 0xFFF7F6F5, 0xFF9B9A93),
+                      CSButton(
+                          'Institution Registration', 0x9E36251D, 0xFFF7F6F5),
                       Center(
                         child: TextButton(onPressed: (){},
                           child: Text(
-                            'Forget Password',
+                            'Enter As a Particpent',
                             style: TextStyle(decoration: TextDecoration.underline,
                                 fontSize: 12, color: Color(0x9E36251D)),
                           ),
@@ -57,8 +63,14 @@ class InstLoginPage extends StatelessWidget {
                       )
                     ],
                   ),
+                  decoration: BoxDecoration(
+                    color: Color(0xFFF7F6F5),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(26),
+                        topRight: Radius.circular(26)),
+                  ),
                 ),
-              )
+              ),
             ],
           ),
           //child: InstHomePageWidgets(),
