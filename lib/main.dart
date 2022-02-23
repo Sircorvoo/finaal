@@ -7,7 +7,7 @@ import 'OmarsWidgets.dart';
 import 'InstPage1.dart';
 import 'InstAddRewardedService.dart';
 void main() => runApp(MaterialApp(
-  home: InstAddCS(),
+  home: InstPage1(),
 ));
 
 
