@@ -48,7 +48,7 @@ class InstEditpage extends StatelessWidget {
                           height: 20,
                         ),
 
-                        CSprofile(1,'' , 'assets/MOH.png' ,'' , '' , '')
+                        CSprofile(1,'Organizing the vaccine center' , 'assets/MOH.png' ,'Riyadh' , '24 Nov' , '24 Nov')
 
                       ],
                     ),

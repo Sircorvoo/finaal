@@ -23,8 +23,6 @@ class CSprofile extends StatelessWidget {
   Widget build(BuildContext context) {
     final LengthSized = MediaQuery.of(context).size.height;
     final WidthSized = MediaQuery.of(context).size.width;
-    print(LengthSized);
-    print(WidthSized);
 
     return Container(
       width: WidthSized * 0.9,
@@ -34,60 +32,136 @@ class CSprofile extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(26))),
       child: Column(
         children: [
-          Row(
-            // first row for points
+          Column(
             children: [
-              Container(
-                width: WidthSized * 0.24,
-                height: LengthSized * 0.05,
-                decoration: BoxDecoration(
-                  color: Color(0xFF8D8D8D),
-                  borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(26),
-                      bottomRight: Radius.circular(26)),
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10,
-                        bottom: 10,
-                        left: 12,
-                        right: 4,
-                      ),
-                      child: Image.asset(
-                        'assets/Token.png',
-                      ),
+              Row(
+                // first row for points
+                children: [
+                  Container(
+                    width: WidthSized * 0.24,
+                    height: LengthSized * 0.05,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF8D8D8D),
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(26),
+                          bottomRight: Radius.circular(26)),
                     ),
-                    Text(
-                      nPoints.toString(),
-                      style: TextStyle(
-                          fontSize: WidthSized * 0.05,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white),
+                    child: Row(
+                      // child row for container
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            top: 10,
+                            bottom: 10,
+                            left: 12,
+                            right: 4,
+                          ),
+                          child: Image.asset(
+                            'assets/Token.png',
+                          ),
+                        ),
+                        Text(
+                          nPoints.toString(),
+                          style: TextStyle(
+                              fontSize: WidthSized * 0.05,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-                // Row for Number of points****
+                    // Row for Number of points****
+                  ),
+                ], //children
+              ),
+              SizedBox(
+                height: LengthSized * 0.01,
+              ),
+              Row( //2nd row
+                children: [
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Container(
+                            width: LengthSized * 0.17,
+                            child: Text(
+                              CSdescription,
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color(0xFF797979)),
+                            )),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+
+              SizedBox(
+                height: LengthSized * 0.01,
+              ),
+
+              Row( // 3rd row for dates
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8),
+                    child: Container(
+                        width: LengthSized * 0.17,
+                        child: Text(
+                          "$startDate " + "-" + "$endDate",
+                          style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: Color(0xFF797979)),
+                        )
+                    ),
+                  ),
+                ],
               ),
 
 
 
-                 Row(
-                   children: [
-                     Container(
-                      height: 40,
-                      width: 70,
-                      child: Image.asset(
-                        imgStr,
-                      ),
-                ),
-                   ],
-                 ),
 
-            ],
+
+
+
+              SizedBox(
+                height: LengthSized * 0.01,
+              ),
+
+              Row( // 4th row
+
+                children: [
+                  Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Container(
+                            width: LengthSized * 0.17,
+                            child: Text(
+                              location,
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                  color: Color(0xFF797979)),
+                            )),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+
+
+
+
+
+
+            ], //children of the first column
           ),
-        ],
+
+        Column(),
+
+        ],// children of first big column that contains everything
       ),
     );
   }
