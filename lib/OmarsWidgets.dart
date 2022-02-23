@@ -52,17 +52,42 @@ class CSfieldEmail extends StatelessWidget {
 }
 
 class CSButton extends StatelessWidget {
-  CSButton(this._text);
+  CSButton(this._text, this._color, this._font);
   final String _text;
+  final int _color;
+  final int _font;
   @override
   Widget build(BuildContext context) {
     final LengthSized = MediaQuery.of(context).size.height;
     final WidthSized = MediaQuery.of(context).size.width;
-    return Container(
-        child: OutlinedButton(
-      child: Text(_text),
-      onPressed: () {},
-    ));
+    return Padding(
+      padding: const EdgeInsets.all(12.0),
+      child: Container(
+        width: LengthSized *0.85 ,
+        child: TextButton(
+          child: Text(_text,
+          style: TextStyle(
+            fontSize: 18,
+            color: Color(_font)
+          ),),
+          onPressed: () {},
+        ),
+        decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black38,
+
+                spreadRadius: 0,
+                blurRadius: 1,
+                offset: Offset(0, 1.25), // changes position of shadow
+              ),
+            ],
+
+            border: Border.all(color: Color(0x47705C53), width: 2),
+            color: Color(_color),
+            borderRadius: BorderRadius.all(Radius.circular(11))),
+      ),
+    );
   }
 }
 
@@ -173,4 +198,3 @@ class _CSPasswordState extends State<CSPassword> {
     );
   }
 }
-
