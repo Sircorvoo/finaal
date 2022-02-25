@@ -42,7 +42,7 @@ class CSmainField extends StatelessWidget {
                   borderRadius: BorderRadius.circular(11),
                   border: Border.all(
                     color: Color(0xff9b9a93),
-                    width: 2,
+                    width: 1,
                   ),
                   boxShadow: [
                     BoxShadow(
@@ -99,45 +99,45 @@ class CSmainField extends StatelessWidget {
                       ),
                     ),
 
-                    Positioned.fill(
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: Container(
-                          // the top left container to write the points
-                          width: WidthSized * 0.18,
-                          height: LengthSized * 0.04,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(11),
-                              topRight: Radius.circular(0),
-                              bottomLeft: Radius.circular(0),
-                              bottomRight: Radius.circular(11),
-                            ),
-                            color: Color(0xff9b9a93),
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Container(
+                        // the top left container to write the points
+                        width: WidthSized * 0.18,
+                        height: LengthSized * 0.04,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(11),
+                            topRight: Radius.circular(0),
+                            bottomLeft: Radius.circular(0),
+                            bottomRight: Radius.circular(11),
                           ),
-                          child: Row(
-                            // child row for container
-                            children: [
-                              SizedBox(
+                          color: Color(0xff9b9a93),
+
+                        ),
+                        child: Row(
+                          // child row for container
+                          children: [
+                            SizedBox(
+                              width: WidthSized * 0.03,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 4),
+                              child: Image.asset(
+                                'assets/Token.png',
+                                height: LengthSized * 0.03,
                                 width: WidthSized * 0.03,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 4),
-                                child: Image.asset(
-                                  'assets/Token.png',
-                                  height: LengthSized * 0.03,
-                                  width: WidthSized * 0.03,
-                                ),
-                              ),
-                              Text(
-                                nPoints.toString(),
-                                style: TextStyle(
-                                    fontSize: WidthSized * 0.05,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.white),
-                              ),
-                            ],
-                          ),
+                            ),
+                            Text(
+                              nPoints.toString(),
+                              style: TextStyle(
+                                  fontSize: WidthSized * 0.05,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -204,17 +204,17 @@ class CSmainField extends StatelessWidget {
                     ),
                   ),*/
 
-                    Positioned.fill(
+                    Positioned(
+                      left: 253,
+                      bottom: 0,
                       child: Align(
                         alignment: Alignment.bottomRight,
                         child: Container(
-                          width: 88,
-                          height: 33.53,
+                          width: 75,
+                          height: 34,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(0),
-                              topRight: Radius.circular(0),
-                              bottomLeft: Radius.circular(0),
+
                               bottomRight: Radius.circular(11),
                             ),
                             border: Border.all(
@@ -223,15 +223,25 @@ class CSmainField extends StatelessWidget {
                             ),
                             color: Color(0xffd05d5d),
                           ),
+
+                          child:   TextButton(
+                            child: Text('Delete', style: TextStyle(color: Colors.white),),
+                            onPressed: () {
+                              print('Pressed');
+
+                            },// on pressed
+                          ),
+
+
                         ),
                       ),
                     ),
                     Positioned(
-                      left: 152,
-                      top: 91,
+                      left: 178,
+                      bottom: 0,
                       child: Container(
-                        width: 88,
-                        height: 40,
+                        width: 75,
+                        height: 34,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(11),
@@ -245,6 +255,15 @@ class CSmainField extends StatelessWidget {
                           ),
                           color: Color(0xffc1b6b6),
                         ),
+
+
+                        child:   TextButton(
+                            child: Text('Edit', style: TextStyle(color: Colors.white),),
+                            onPressed: () {
+                              print('Pressed');
+
+                            },// on pressed
+                      ),
                       ),
                     ),
                   ],

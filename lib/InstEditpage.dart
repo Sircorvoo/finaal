@@ -50,8 +50,9 @@ class InstEditpage extends StatelessWidget {
                         SizedBox(
                           height: 20,
                         ),
+                        for(int i = 0 ; i <3; i++)
                         CSmainField(1, 'Organizing the vaccine center',
-                            'assets/MOH.png', 'Riyadh', '24 Nov', '24 Nov')
+                            'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov')
                       ],
                     ),
                   ),
