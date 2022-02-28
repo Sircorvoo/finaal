@@ -56,11 +56,11 @@ class CSmainField extends StatelessWidget {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 15,
-                      top: 39.28,
+                      left: WidthSized * 0.0383,
+                      top: LengthSized * 0.0502,
                       child: SizedBox(
-                        width: 185,
-                        height: 45.99,
+                        width: WidthSized * 0.4719,
+                        height: LengthSized * 0.0588,
                         child: Text(
                           CSdescription,
                           style: TextStyle(
@@ -72,11 +72,11 @@ class CSmainField extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 15,
-                      top: 79,
+                      left: WidthSized * 0.0382,
+                      top: LengthSized * 0.1011,
                       child: SizedBox(
-                        width: 185,
-                        height: 38.32,
+                        width: WidthSized * 0.4719,
+                        height: LengthSized * 0.0490,
                         child: Text(
                           "$startDate" + "-" + "$endDate",
                           style: TextStyle(
@@ -90,11 +90,11 @@ class CSmainField extends StatelessWidget {
                     ),
 
                     Positioned(
-                      left: 256,
-                      top: 8,
+                      left: WidthSized * 0.6530,
+                      top: LengthSized * 0.0102,
                       child: Container(
-                        width: 63,
-                        height: 54.61,
+                        width: WidthSized * 0.1607,
+                        height: LengthSized * 0.0699,
                         child: Image.asset(imgStr),
                       ),
                     ),
@@ -205,13 +205,13 @@ class CSmainField extends StatelessWidget {
                   ),*/
 
                     Positioned(
-                      left: 253,
+                      left: WidthSized * 0.6454,
                       bottom: 0,
                       child: Align(
                         alignment: Alignment.bottomRight,
                         child: Container(
-                          width: 75,
-                          height: 34,
+                          width: WidthSized * 0.1913,
+                          height: LengthSized * 0.0435,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
 
@@ -237,11 +237,11 @@ class CSmainField extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      left: 178,
+                      left: WidthSized * 0.4540,
                       bottom: 0,
                       child: Container(
-                        width: 75,
-                        height: 34,
+                        width: WidthSized * 0.1913,
+                        height: LengthSized * 0.0435,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(11),
@@ -275,8 +275,8 @@ class CSmainField extends StatelessWidget {
             left: WidthSized * 0.04, //
             top: LengthSized * 0.127,
             child: SizedBox(
-              width: 185,
-              height: 38.32,
+              width: WidthSized * 0.4719,
+              height: LengthSized * 0.0490,
               child: Text(
                 location,
                 style: TextStyle(
