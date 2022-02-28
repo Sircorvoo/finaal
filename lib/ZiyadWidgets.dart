@@ -12,7 +12,6 @@ class CSmainField extends StatelessWidget {
   CSmainField(this.nPoints, this.CSdescription, this.imgStr, this.location,
       this.startDate, this.endDate);
 
-
   final int nPoints;
   final String CSdescription;
   final String imgStr;
@@ -114,7 +113,6 @@ class CSmainField extends StatelessWidget {
                             bottomRight: Radius.circular(11),
                           ),
                           color: Color(0xff9b9a93),
-
                         ),
                         child: Row(
                           // child row for container
@@ -214,7 +212,6 @@ class CSmainField extends StatelessWidget {
                           height: LengthSized * 0.0435,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
-
                               bottomRight: Radius.circular(11),
                             ),
                             border: Border.all(
@@ -223,16 +220,17 @@ class CSmainField extends StatelessWidget {
                             ),
                             color: Color(0xffd05d5d),
                           ),
-
-                          child:   TextButton(
-                            child: Text('Delete', style: TextStyle(color: Colors.white, fontSize: WidthSized * 0.0370),),
+                          child: TextButton(
+                            child: Text(
+                              'Delete',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: WidthSized / LengthSized * 20),
+                            ),
                             onPressed: () {
                               print('Pressed');
-
-                            },// on pressed
+                            }, // on pressed
                           ),
-
-
                         ),
                       ),
                     ),
@@ -255,14 +253,16 @@ class CSmainField extends StatelessWidget {
                           ),
                           color: Color(0xffc1b6b6),
                         ),
-
-
-                        child:   TextButton(
-                          child: Text('Edit', style: TextStyle(color: Colors.white , fontSize: WidthSized * 0.0370),),
+                        child: TextButton(
+                          child: Text(
+                            'Edit',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: WidthSized / LengthSized * 20),
+                          ),
                           onPressed: () {
                             print('Pressed');
-
-                          },// on pressed
+                          }, // on pressed
                         ),
                       ),
                     ),
