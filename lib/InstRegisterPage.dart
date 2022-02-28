@@ -43,7 +43,7 @@ class InstRegisterPage extends StatelessWidget {
                         SizedBox(
                           height: 15,
                         ),
-                        CSfield('Pussy Name', ''),
+                        CSfield('Institution Name', ''),
                         CSfieldEmail('Email', ''),
                         CSPhoneFiled('Phone Number', ''),
                         CSfield('Postal Code', ''),
