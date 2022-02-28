@@ -44,13 +44,13 @@ class InstEditpage extends StatelessWidget {
                       children: [
                         Row(
                           children: [
-                            Header('assets/PPL.png', 'Add Community Serveice')
+                            Header('assets/PPL.png', 'Add Community Services')
                           ],
                         ),
                         SizedBox(
                           height: 20,
                         ),
-                        for(int i = 0 ; i <3; i++)
+                        for(int i = 0 ; i <10; i++)
                         CSmainField(1, 'Organizing the vaccine center',
                             'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov')
                       ],
