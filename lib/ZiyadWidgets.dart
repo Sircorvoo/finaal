@@ -258,12 +258,12 @@ class CSmainField extends StatelessWidget {
 
 
                         child:   TextButton(
-                            child: Text('Edit', style: TextStyle(color: Colors.white),),
-                            onPressed: () {
-                              print('Pressed');
+                          child: Text('Edit', style: TextStyle(color: Colors.white),),
+                          onPressed: () {
+                            print('Pressed');
 
-                            },// on pressed
-                      ),
+                          },// on pressed
+                        ),
                       ),
                     ),
                   ],
