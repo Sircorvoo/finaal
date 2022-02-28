@@ -225,7 +225,7 @@ class CSmainField extends StatelessWidget {
                           ),
 
                           child:   TextButton(
-                            child: Text('Delete', style: TextStyle(color: Colors.white),),
+                            child: Text('Delete', style: TextStyle(color: Colors.white, fontSize: WidthSized * 0.0370),),
                             onPressed: () {
                               print('Pressed');
 
@@ -258,7 +258,7 @@ class CSmainField extends StatelessWidget {
 
 
                         child:   TextButton(
-                          child: Text('Edit', style: TextStyle(color: Colors.white),),
+                          child: Text('Edit', style: TextStyle(color: Colors.white , fontSize: WidthSized * 0.0370),),
                           onPressed: () {
                             print('Pressed');
 
