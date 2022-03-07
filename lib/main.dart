@@ -11,7 +11,7 @@ import 'InstAddRewardedService.dart';
 
 void main() => runApp(MaterialApp(
       home: InstPage1(),
-      initialRoute: InstHomePage.ScreenRoute ,
+      initialRoute: InstPage1.ScreenRoute ,
       routes: {
         InstPage1.ScreenRoute: (Context) => InstPage1(),
         InstRegisterPage.ScreenRoute: (Context) => InstRegisterPage(),
