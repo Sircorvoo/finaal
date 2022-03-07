@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'InstEditpage.dart';
+
 class wLogo extends StatelessWidget {
   const wLogo({Key? key}) : super(key: key);
 
@@ -63,10 +65,12 @@ class InatMainBtn extends StatelessWidget {
   final IconData _icon;
   final String _title;
   final double _sized;
+  final VoidCallback onPressed1;
+  final VoidCallback onPressed2;
 
   //final Length = MediaQuery.of(context).size.height ;
 
-  InatMainBtn(this._icon, this._image, this._title, this._sized);
+  InatMainBtn(this._icon, this._image, this._title, this._sized, this.onPressed1, this.onPressed2);
 
   @override
   Widget build(BuildContext context) {
@@ -95,46 +99,52 @@ class InatMainBtn extends StatelessWidget {
                 topLeft: Radius.circular(11),
                 bottomLeft: Radius.circular(11),
               )),
-          child: Row(
-            children: [
-              SizedBox(
-                width: 30,
-              ),
-              Column(
-                //crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Opacity(
-                    opacity: 0.6,
-                    child: Image.asset(
-                      _image,
-                      width: _sized,
-                      height: _sized,
+          child: TextButton(
+            onPressed: onPressed1,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 30,
+                ),
+                Column(
+                  //crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Opacity(
+                      opacity: 0.6,
+                      child: Image.asset(
+                        _image,
+                        width: _sized,
+                        height: _sized,
+                      ),
                     ),
-                  ),
-                  Text(_title,
-                      style: TextStyle(fontSize: 10, color: Colors.black45))
-                ],
-              )
-            ],
+                    Text(_title,
+                        style: TextStyle(fontSize: 10, color: Colors.black45))
+                  ],
+                )
+              ],
+            ),
           ),
         ),
         Container(
           width: WidthSized * 0.22,
           height: LengthSized * 0.129,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                _icon,
-                color: Colors.white,
-                size: 32,
-              ),
-              Text(
-                'Fuck omar <#',
-                style: TextStyle(fontSize: 10, color: Colors.white),
-              ),
-            ],
+          child: TextButton(
+            onPressed: onPressed2,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  _icon,
+                  color: Colors.white,
+                  size: 32,
+                ),
+                Text(
+                  'Setting',
+                  style: TextStyle(fontSize: 10, color: Colors.white),
+                ),
+              ],
+            ),
           ),
           decoration: BoxDecoration(
             boxShadow: [

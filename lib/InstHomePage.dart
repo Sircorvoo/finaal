@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 //import 'main.dart';
+import 'InstAddCS.dart';
+import 'InstAddRewardedService.dart';
+import 'InstEditpage.dart';
 import 'InstHomeWidgets.dart';
+import 'InstRewardService.dart';
 
 class InstHomePage extends StatelessWidget {
   static const String ScreenRoute= 'InstHomePage';
@@ -44,10 +48,10 @@ class InstHomePage extends StatelessWidget {
                         height: 15,
                       ),
                       InatMainBtn(Icons.settings, 'assets/PPL.png',
-                          'Add Omar Serveice', 60),
+                          'Add Omar Serveice', 60,() {Navigator.pushNamed(context, InstAddCS.ScreenRoute);},() {Navigator.pushNamed(context, InstEditpage.ScreenRoute);}),
                       SizedBox(height: 16),
                       InatMainBtn(Icons.settings, 'assets/Token.png',
-                          'Add Reword Serveice', 40),
+                          'Add Reword Serveice', 40, () {Navigator.pushNamed(context, InstAddRewardedService.ScreenRoute);}, () {Navigator.pushNamed(context, InstRewardService.ScreenRoute);}),
                       //SizedBox(height: 120),
                     ],
                   ),
