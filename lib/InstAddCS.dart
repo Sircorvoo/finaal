@@ -55,7 +55,7 @@ class InstAddCS extends StatelessWidget {
                         CSPhoneFiled('People Quantity', ''),
                         CSfield('Description', ''),
                         CSfield('Logo', ''),
-                        CSButton('Sumbit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
+                        CSButton('Sumbit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstHomePage.ScreenRoute);}),
                       ],
                     ),
                   ),

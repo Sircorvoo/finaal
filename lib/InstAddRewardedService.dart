@@ -52,7 +52,7 @@ class InstAddRewardedService extends StatelessWidget {
                         CSPhoneFiled('Reward Point', ''),
                         CSDateFiled('Expire Date', ''),
                         CSfield('Descrption', ''),
-                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
+                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstHomePage.ScreenRoute);}),
                       ],
                     ),
                   ),
