@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
+import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
 class InstAddCS extends StatelessWidget {
+  static const String ScreenRoute= 'InstAddCS';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +55,7 @@ class InstAddCS extends StatelessWidget {
                         CSPhoneFiled('People Quantity', ''),
                         CSfield('Description', ''),
                         CSfield('Logo', ''),
-                        CSButton('Sumbit',0xFFF7F6F5,0xFF9B9A93),
+                        CSButton('Sumbit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
                       ],
                     ),
                   ),

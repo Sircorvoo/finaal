@@ -6,6 +6,7 @@ import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
 class InstRegisterPage extends StatelessWidget {
+  static const String ScreenRoute= 'InstRegisterPage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +50,7 @@ class InstRegisterPage extends StatelessWidget {
                         CSfield('Postal Code', ''),
                         CSPassword('Password', ''),
                         CSPassword('Confirm Password', ''),
-                        CSButton('Create Account',0xFFF7F6F5,0xFF9B9A93),
+                        CSButton('Create Account',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstHomePage.ScreenRoute);}),
                         
                       ],
                     ),

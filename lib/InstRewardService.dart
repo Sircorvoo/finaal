@@ -12,6 +12,7 @@ import 'InstAddRewardedService.dart';
 import 'ZiyadWidgets.dart';
 
 class InstRewardService extends StatelessWidget {
+  static const String ScreenRoute= 'InstRewardService';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

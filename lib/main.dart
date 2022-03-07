@@ -10,5 +10,18 @@ import 'InstPage1.dart';
 import 'InstAddRewardedService.dart';
 
 void main() => runApp(MaterialApp(
-      home: InstRewardService(),
+      home: InstPage1(),
+      initialRoute: InstHomePage.ScreenRoute ,
+      routes: {
+        InstPage1.ScreenRoute: (Context) => InstPage1(),
+        InstRegisterPage.ScreenRoute: (Context) => InstRegisterPage(),
+        InstLoginPage.ScreenRoute: (Context) => InstLoginPage(),
+        InstRewardService.ScreenRoute: (Context) => InstRewardService(),
+        InstHomePage.ScreenRoute: (Context) => InstHomePage(),
+        InstEditpage.ScreenRoute: (Context) => InstEditpage(),
+        InstAddRewardedService.ScreenRoute: (Context) => InstAddRewardedService(),
+        InstAddCS.ScreenRoute: (Context) => InstAddCS(),
+      },
+
+
     ));

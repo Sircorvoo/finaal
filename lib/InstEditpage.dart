@@ -8,6 +8,7 @@ import 'ZiyadWidgets.dart';
 import 'waleedWidgets.dart';
 
 class InstEditpage extends StatelessWidget {
+  static const String ScreenRoute= 'InstEditpage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

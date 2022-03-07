@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'InstHomeWidgets.dart';
 
 class InstHomePage extends StatelessWidget {
+  static const String ScreenRoute= 'InstHomePage';
   const InstHomePage({Key? key}) : super(key: key);
 
   @override

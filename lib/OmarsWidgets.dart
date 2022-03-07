@@ -52,10 +52,12 @@ class CSfieldEmail extends StatelessWidget {
 }
 
 class CSButton extends StatelessWidget {
-  CSButton(this._text, this._color, this._font);
+  CSButton(this._text, this._color, this._font, this.onPressed);
   final String _text;
   final int _color;
   final int _font;
+  final VoidCallback onPressed;
+
   @override
   Widget build(BuildContext context) {
     final LengthSized = MediaQuery.of(context).size.height;
@@ -70,7 +72,7 @@ class CSButton extends StatelessWidget {
             fontSize: 18,
             color: Color(_font)
           ),),
-          onPressed: () {},
+          onPressed: onPressed,
         ),
         decoration: BoxDecoration(
             boxShadow: [

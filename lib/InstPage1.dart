@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
+import 'InstLoginPage.dart';
+import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
 class InstPage1 extends StatelessWidget {
+  static const String ScreenRoute= 'InstPage1';
   const InstPage1({Key? key}) : super(key: key);
 
   @override
@@ -49,9 +52,9 @@ class InstPage1 extends StatelessWidget {
                 child: Container(
                   child: Column(
                     children: [
-                      CSButton('Institution Sign In', 0xFFF7F6F5, 0xFF9B9A93),
+                      CSButton('Institution Sign In', 0xFFF7F6F5, 0xFF9B9A93,() {Navigator.pushNamed(context, InstLoginPage.ScreenRoute);}),
                       CSButton(
-                          'Institution Registration', 0x9E36251D, 0xFFF7F6F5),
+                          'Institution Registration', 0x9E36251D, 0xFFF7F6F5,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
                       Center(
                         child: TextButton(onPressed: (){},
                           child: Text(

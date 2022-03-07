@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
+import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
 import 'OmarsWidgets.dart';
 
 class InstAddRewardedService extends StatelessWidget {
+  static const String ScreenRoute= 'InstAddRewardedService';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,7 +52,7 @@ class InstAddRewardedService extends StatelessWidget {
                         CSPhoneFiled('Reward Point', ''),
                         CSDateFiled('Expire Date', ''),
                         CSfield('Descrption', ''),
-                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93),
+                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
                       ],
                     ),
                   ),
