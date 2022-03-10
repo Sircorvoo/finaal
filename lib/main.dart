@@ -5,12 +5,10 @@ import 'InstHomePage.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
 import 'InstRewardService.dart';
-import 'OmarsWidgets.dart';
 import 'InstPage1.dart';
 import 'InstAddRewardedService.dart';
 
 void main() => runApp(MaterialApp(
-      home: InstPage1(),
       initialRoute: InstPage1.ScreenRoute ,
       routes: {
         InstPage1.ScreenRoute: (Context) => InstPage1(),
