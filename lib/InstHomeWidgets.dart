@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'InstSettingsPage.dart';
+import 'InstPages/InstSettingsPage.dart';
 
 class Mu3eenWightLogo extends StatelessWidget {
   const Mu3eenWightLogo({Key? key}) : super(key: key);

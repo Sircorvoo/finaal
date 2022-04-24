@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'InstHomePage.dart';
+import 'InstPages/InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 import 'InputField.dart';

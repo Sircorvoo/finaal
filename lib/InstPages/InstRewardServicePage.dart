@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'InstAddCS.dart';
+import '../InstAddCS.dart';
 import 'InstSettingsPage.dart';
 import 'InstHomePage.dart';
-import 'InstHomeWidgets.dart';
+import '../InstHomeWidgets.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
-import 'InstaAddCSWidgets.dart';
-import 'InputField.dart';
+import '../InstaAddCSWidgets.dart';
+import '../InputField.dart';
 import 'InstIntroPage.dart';
 import 'InstAddRewardedServicePage.dart';
-import 'MainCardWidgets.dart';
+import '../MainCardWidgets.dart';
 
 class InstRewardService extends StatelessWidget {
   static const String ScreenRoute= 'InstRewardService';

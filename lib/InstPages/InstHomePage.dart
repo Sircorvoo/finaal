@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 //import 'main.dart';
-import 'InstAddCS.dart';
+import '../InstAddCS.dart';
 import 'InstAddRewardedServicePage.dart';
 import 'InstSettingsPage.dart';
-import 'InstHomeWidgets.dart';
+import '../InstHomeWidgets.dart';
 import 'InstRewardServicePage.dart';
 
 class InstHomePage extends StatelessWidget {

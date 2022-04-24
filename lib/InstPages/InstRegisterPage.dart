@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'InstHomePage.dart';
-import 'InstHomeWidgets.dart';
-import 'InstaAddCSWidgets.dart';
-import 'InputField.dart';
+import '../InstHomeWidgets.dart';
+import '../InstaAddCSWidgets.dart';
+import '../InputField.dart';
 
 class InstRegisterPage extends StatelessWidget {
   static const String ScreenRoute= 'InstRegisterPage';

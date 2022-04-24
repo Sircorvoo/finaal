@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'InstAddCS.dart';
+import '../InstAddCS.dart';
 import 'InstHomePage.dart';
-import 'InstHomeWidgets.dart';
-import 'InstaAddCSWidgets.dart';
-import 'InputField.dart';
-import 'MainCardWidgets.dart';
-import 'waleedWidgets.dart';
+import '../InstHomeWidgets.dart';
+import 'InstRegisterPage.dart';
+import '../InstaAddCSWidgets.dart';
+import '../InputField.dart';
+import 'InstHomePage.dart';
 
-class InstEditpage extends StatelessWidget {
-  static const String ScreenRoute= 'InstEditpage';
+class InstAddRewardedService extends StatelessWidget {
+  static const String ScreenRoute= 'InstAddRewardedService';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,16 +44,16 @@ class InstEditpage extends StatelessWidget {
                     child: Column(
                       children: [
                         Row(
-                          children: [
-                            Header('assets/PPL.png', 'Add Community Services')
-                          ],
+                          children: [Header('assets/Token.png','Add Rewarded Serveice')],
                         ),
                         SizedBox(
-                          height: 20,
+                          height: 15,
                         ),
-                        for(int i = 0 ; i <10; i++)
-                        mainCard(1, 'Organizing the vaccine center',
-                            'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov','Edit',0xff909090 , 'Delete',0xFFAF2E2E)
+                        CSfield('Reward Name', ''),
+                        CSPhoneFiled('Reward Point', ''),
+                        CSDateFiled('Expire Date', ''),
+                        CSfield('Descrption', ''),
+                        CSButton('Submit',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstHomePage.ScreenRoute);}),
                       ],
                     ),
                   ),
