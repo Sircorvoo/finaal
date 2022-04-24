@@ -17,10 +17,14 @@ import 'PrtcPage/PrtcIntroPage.dart';
 import 'PrtcPage/PrtcLoginPage.dart';
 import 'PrtcPage/PrtcOTPPage.dart';
 import 'PrtcPage/PrtcRegisterPage.dart';
+import 'PrtcPage/PrtcHomePage.dart';
+
 void main() => runApp(MaterialApp(
-      initialRoute: PrtcOTPPage.ScreenRoute ,
+      initialRoute: PrtcHomePage.ScreenRoute ,
       routes: {
-        //PrtcHomePage.ScreenRoute: (Context) =>PrtcHomePage(),
+
+        PrtcHomePage.ScreenRoute: (Context) =>PrtcHomePage(),
+
         PrtcOTPPage.ScreenRoute: (Context) =>PrtcOTPPage(),
         PrtcRegisterPage.ScreenRoute: (Context) =>PrtcRegisterPage(),
         PrtcLoginPage.ScreenRoute: (Context) =>PrtcLoginPage(),
