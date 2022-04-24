@@ -4,6 +4,7 @@ import '../InstAddCS.dart';
 import '../HomeWidgets.dart';
 import '../InstaAddCSWidgets.dart';
 import '../InputField.dart';
+import 'PrtcIntroPage.dart';
 
 class PrtcLoadingPage extends StatelessWidget {
   static const String ScreenRoute= 'PrtcLoadingPage';
@@ -41,15 +42,13 @@ class PrtcLoadingPage extends StatelessWidget {
                         child: Container(
                           child: Image.asset(
                             'assets/blogo.png',
-                            width: 250,
-                            height: 250,
+                            width: 150,
+                            height: 150,
                             color: Colors.black.withOpacity(0.8),
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 200,
-                      ),
+
 
 
                       Column(
@@ -57,7 +56,7 @@ class PrtcLoadingPage extends StatelessWidget {
                         children: [
 
 
-                         TextButton(onPressed: (){},
+                         TextButton(onPressed: (){Navigator.pushNamed(context, PrtcIntroPage.ScreenRoute);},
                               child: Text(
                                 'Powered By',
                                 style: TextStyle(

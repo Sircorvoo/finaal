@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'AdminPages/AdminCommunity.dart';
+import 'AdminPages/AdminHomePage.dart';
+import 'AdminPages/AdminReword.dart';
 import 'PrtcPage/PrtcHomePage.dart';
 import 'PrtcPage/PrtcLoadingPage.dart';
 import 'InstAddCS.dart';
@@ -17,14 +20,14 @@ import 'PrtcPage/PrtcIntroPage.dart';
 import 'PrtcPage/PrtcLoginPage.dart';
 import 'PrtcPage/PrtcOTPPage.dart';
 import 'PrtcPage/PrtcRegisterPage.dart';
-import 'PrtcPage/PrtcHomePage.dart';
-
 void main() => runApp(MaterialApp(
-      initialRoute: PrtcHomePage.ScreenRoute ,
+      initialRoute: AdminHomePage.ScreenRoute ,
       routes: {
-
+        AdminHomePage.ScreenRoute: (Context) =>AdminHomePage(),
+        AdminCommunity.ScreenRoute: (Context) =>AdminCommunity(),
+        AdminReword.ScreenRoute: (Context) =>AdminReword(),
+        PrtcRegisterPage.ScreenRoute: (Context) =>PrtcRegisterPage(),
         PrtcHomePage.ScreenRoute: (Context) =>PrtcHomePage(),
-
         PrtcOTPPage.ScreenRoute: (Context) =>PrtcOTPPage(),
         PrtcRegisterPage.ScreenRoute: (Context) =>PrtcRegisterPage(),
         PrtcLoginPage.ScreenRoute: (Context) =>PrtcLoginPage(),
