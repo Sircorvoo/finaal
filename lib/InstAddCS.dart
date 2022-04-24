@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
+import 'InputField.dart';
 
 class InstAddCS extends StatelessWidget {
   static const String ScreenRoute= 'InstAddCS';
@@ -26,7 +26,7 @@ class InstAddCS extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: wLogo(),
+                    child: Mu3eenWightLogo(),
                   ),
                   SizedBox(
                     height: 75,

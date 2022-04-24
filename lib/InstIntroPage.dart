@@ -5,7 +5,7 @@ import 'InstHomeWidgets.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
+import 'InputField.dart';
 
 class InstPage1 extends StatelessWidget {
   static const String ScreenRoute= 'InstPage1';

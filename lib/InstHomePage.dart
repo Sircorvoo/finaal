@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 //import 'main.dart';
 import 'InstAddCS.dart';
-import 'InstAddRewardedService.dart';
-import 'InstEditpage.dart';
+import 'InstAddRewardedServicePage.dart';
+import 'InstSettingsPage.dart';
 import 'InstHomeWidgets.dart';
-import 'InstRewardService.dart';
+import 'InstRewardServicePage.dart';
 
 class InstHomePage extends StatelessWidget {
   static const String ScreenRoute= 'InstHomePage';
@@ -26,7 +26,7 @@ class InstHomePage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                child: wLogo(),
+                child: Mu3eenWightLogo(),
               ),
               SizedBox(
                 height: 75,
@@ -42,15 +42,15 @@ class InstHomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(
-                        children: [InstLogo()],
+                        children: [InstLogo('assets/MOH.png')],
                       ),
                       SizedBox(
                         height: 15,
                       ),
-                      InatMainBtn(Icons.settings, 'assets/PPL.png',
+                      AddServeiceBtn(Icons.settings, 'assets/PPL.png',
                           'Add Omar Serveice', 60,() {Navigator.pushNamed(context, InstAddCS.ScreenRoute);},() {Navigator.pushNamed(context, InstEditpage.ScreenRoute);}),
                       SizedBox(height: 16),
-                      InatMainBtn(Icons.settings, 'assets/Token.png',
+                      AddServeiceBtn(Icons.settings, 'assets/Token.png',
                           'Add Reword Serveice', 40, () {Navigator.pushNamed(context, InstAddRewardedService.ScreenRoute);}, () {Navigator.pushNamed(context, InstRewardService.ScreenRoute);}),
                       //SizedBox(height: 120),
                     ],

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'InstAddCS.dart';
-import 'InstEditpage.dart';
+import 'InstSettingsPage.dart';
 import 'InstHomePage.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
-import 'InstRewardService.dart';
-import 'InstPage1.dart';
-import 'InstAddRewardedService.dart';
+import 'InstRewardServicePage.dart';
+import 'InstIntroPage.dart';
+import 'InstAddRewardedServicePage.dart';
 
 void main() => runApp(MaterialApp(
       initialRoute: InstPage1.ScreenRoute ,

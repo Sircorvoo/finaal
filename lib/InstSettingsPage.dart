@@ -3,8 +3,8 @@ import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
-import 'ZiyadWidgets.dart';
+import 'InputField.dart';
+import 'MainCardWidgets.dart';
 import 'waleedWidgets.dart';
 
 class InstEditpage extends StatelessWidget {
@@ -29,7 +29,7 @@ class InstEditpage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: wLogo(),
+                    child: Mu3eenWightLogo(),
                   ),
                   SizedBox(
                     height: 75,
@@ -52,8 +52,8 @@ class InstEditpage extends StatelessWidget {
                           height: 20,
                         ),
                         for(int i = 0 ; i <10; i++)
-                        CSmainField(1, 'Organizing the vaccine center',
-                            'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov')
+                        mainCard(1, 'Organizing the vaccine center',
+                            'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov','Edit',0xff909090 , 'Delete',0xFFAF2E2E)
                       ],
                     ),
                   ),

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'InstAddCS.dart';
-import 'InstEditpage.dart';
+import 'InstSettingsPage.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
-import 'InstPage1.dart';
-import 'InstAddRewardedService.dart';
-import 'ZiyadWidgets.dart';
+import 'InputField.dart';
+import 'InstIntroPage.dart';
+import 'InstAddRewardedServicePage.dart';
+import 'MainCardWidgets.dart';
 
 class InstRewardService extends StatelessWidget {
   static const String ScreenRoute= 'InstRewardService';
@@ -33,7 +33,7 @@ class InstRewardService extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: wLogo(),
+                    child: Mu3eenWightLogo(),
                   ),
                   SizedBox(
                     height: 75,
@@ -55,8 +55,8 @@ class InstRewardService extends StatelessWidget {
                         SizedBox(
                           height: 15,
                         ),
-                        CSmainField(70, 'Noon', 'assets/Noon.png', ' ', '25% ',
-                            ' coupon')
+                        mainCard(70, 'Noon', 'assets/Noon.png', ' ', '25% ',
+                            ' coupon','Edit',0xff909090 , 'Delete',0xFFAF2E2E)
                       ],
                     ),
                   ),

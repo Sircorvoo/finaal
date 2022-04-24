@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'InstEditpage.dart';
+import 'InstSettingsPage.dart';
 
-class wLogo extends StatelessWidget {
-  const wLogo({Key? key}) : super(key: key);
+class Mu3eenWightLogo extends StatelessWidget {
+  const Mu3eenWightLogo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +26,9 @@ class wLogo extends StatelessWidget {
 }
 
 class InstLogo extends StatelessWidget {
-  //late String Logo ;
-  //InstLogo({required String Logo});
+   final String image;
+  InstLogo(this.image);
+
 
   @override
   Widget build(BuildContext context) {
@@ -53,14 +54,14 @@ class InstLogo extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Image.asset(
-          'assets/MOH.png',
+          image,
         ),
       ),
     );
   }
 }
 
-class InatMainBtn extends StatelessWidget {
+class AddServeiceBtn extends StatelessWidget {
   final String _image;
   final IconData _icon;
   final String _title;
@@ -70,7 +71,7 @@ class InatMainBtn extends StatelessWidget {
 
   //final Length = MediaQuery.of(context).size.height ;
 
-  InatMainBtn(this._icon, this._image, this._title, this._sized, this.onPressed1, this.onPressed2);
+  AddServeiceBtn(this._icon, this._image, this._title, this._sized, this.onPressed1, this.onPressed2);
 
   @override
   Widget build(BuildContext context) {

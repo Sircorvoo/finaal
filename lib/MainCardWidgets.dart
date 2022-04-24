@@ -4,13 +4,13 @@ import 'InstAddCS.dart';
 import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
+import 'InputField.dart';
 
-class CSmainField extends StatelessWidget {
+class mainCard extends StatelessWidget {
   // const CSprofile({Key? key}) : super(key: key);
 
-  CSmainField(this.nPoints, this.CSdescription, this.imgStr, this.location,
-      this.startDate, this.endDate);
+  mainCard(this.nPoints, this.CSdescription, this.imgStr, this.location,
+      this.startDate, this.endDate,this.leftButton,this.leftButtonColor,this.rightButton,this.rightButtonColor);
 
   final int nPoints;
   final String CSdescription;
@@ -18,13 +18,19 @@ class CSmainField extends StatelessWidget {
   final String startDate;
   final String endDate;
   final String location;
+  final String leftButton;
+  final String rightButton;
+  final int leftButtonColor;
+  final int rightButtonColor;
+
+
 
   @override
   Widget build(BuildContext context) {
     final LengthSized = MediaQuery.of(context).size.height;
     final WidthSized = MediaQuery.of(context).size.width;
-    print(WidthSized);
-    print(LengthSized);
+    //print(WidthSized);
+    //print(LengthSized);
 
     return Container(
       width: WidthSized * 0.839,
@@ -218,17 +224,17 @@ class CSmainField extends StatelessWidget {
                               color: Color(0xff909090),
                               width: 1,
                             ),
-                            color: Color(0xffd05d5d),
+                            color: Color(rightButtonColor),
                           ),
                           child: TextButton(
                             child: Text(
-                              'Delete',
+                              rightButton,
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: WidthSized / LengthSized * 20),
                             ),
                             onPressed: () {
-                              print('Pressed');
+                              //print('Pressed');
                             }, // on pressed
                           ),
                         ),
@@ -251,11 +257,11 @@ class CSmainField extends StatelessWidget {
                             color: Color(0xff909090),
                             width: 1,
                           ),
-                          color: Color(0xffc1b6b6),
+                          color: Color(leftButtonColor),
                         ),
                         child: TextButton(
                           child: Text(
-                            'Edit',
+                            leftButton,
                             style: TextStyle(
                                 color: Colors.white,
                                 fontSize: WidthSized / LengthSized * 20),

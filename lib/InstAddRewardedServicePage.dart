@@ -4,7 +4,7 @@ import 'InstHomePage.dart';
 import 'InstHomeWidgets.dart';
 import 'InstRegisterPage.dart';
 import 'InstaAddCSWidgets.dart';
-import 'OmarsWidgets.dart';
+import 'InputField.dart';
 
 class InstAddRewardedService extends StatelessWidget {
   static const String ScreenRoute= 'InstAddRewardedService';
@@ -28,7 +28,7 @@ class InstAddRewardedService extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: wLogo(),
+                    child: Mu3eenWightLogo(),
                   ),
                   SizedBox(
                     height: 75,
