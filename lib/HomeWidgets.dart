@@ -25,6 +25,29 @@ class Mu3eenWightLogo extends StatelessWidget {
   }
 }
 
+class Mu3eenBlackLogo extends StatelessWidget {
+  const Mu3eenBlackLogo({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            child: Image.asset(
+              'assets/blogo.png',
+              width: 100,
+              height: 100,
+              color: Colors.black.withOpacity(0.8),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
 class InstLogo extends StatelessWidget {
    final String image;
   InstLogo(this.image);
@@ -169,3 +192,33 @@ class AddServeiceBtn extends StatelessWidget {
     );
   }
 }
+
+class OTP extends StatelessWidget {
+  int num ;
+  OTP(this.num);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+
+      child: Padding(
+        padding: const EdgeInsets.all(50),
+        child: Text("$num",style: TextStyle(
+          fontSize: 30,
+          color: Colors.black54
+        ),),
+      ),
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.black54),
+          color: Color(0x8ADCDCD1),
+        borderRadius: BorderRadius.all(Radius.circular(26))
+      ),
+    );
+
+
+  }
+}
+
+
+

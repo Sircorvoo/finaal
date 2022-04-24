@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'PrtcPage/PrtcHomePage.dart';
+import 'PrtcPage/PrtcLoadingPage.dart';
 import 'InstAddCS.dart';
 //import 'InstSettingsPage.dart';
 //import 'InstHomePage.dart';
@@ -11,11 +13,20 @@ import 'InstPages/InstHomePage.dart';
 import 'InstPages/InstRegisterPage.dart';
 import 'InstPages/InstSettingsPage.dart';
 import 'InstPages/InstLoginPage.dart';
-
+import 'PrtcPage/PrtcIntroPage.dart';
+import 'PrtcPage/PrtcLoginPage.dart';
+import 'PrtcPage/PrtcOTPPage.dart';
+import 'PrtcPage/PrtcRegisterPage.dart';
 void main() => runApp(MaterialApp(
-      initialRoute: InstPage1.ScreenRoute ,
+      initialRoute: PrtcOTPPage.ScreenRoute ,
       routes: {
-        InstPage1.ScreenRoute: (Context) => InstPage1(),
+        //PrtcHomePage.ScreenRoute: (Context) =>PrtcHomePage(),
+        PrtcOTPPage.ScreenRoute: (Context) =>PrtcOTPPage(),
+        PrtcRegisterPage.ScreenRoute: (Context) =>PrtcRegisterPage(),
+        PrtcLoginPage.ScreenRoute: (Context) =>PrtcLoginPage(),
+        PrtcIntroPage.ScreenRoute: (Context) =>PrtcIntroPage(),
+        PrtcLoadingPage.ScreenRoute: (Context) =>PrtcLoadingPage(),
+        InstIntroPage.ScreenRoute: (Context) => InstIntroPage(),
         InstRegisterPage.ScreenRoute: (Context) => InstRegisterPage(),
         InstLoginPage.ScreenRoute: (Context) => InstLoginPage(),
         InstRewardService.ScreenRoute: (Context) => InstRewardService(),

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import '../InstAddCS.dart';
-import 'InstHomePage.dart';
+//import 'InstHomePage.dart';
 import '../HomeWidgets.dart';
-import 'InstRegisterPage.dart';
+//import 'InstRegisterPage.dart';
+import '../InstPages/InstHomePage.dart';
 import '../InstaAddCSWidgets.dart';
 import '../InputField.dart';
+import 'PrtcOTPPage.dart';
 
-class InstLoginPage extends StatelessWidget {
-  static const String ScreenRoute= 'InstLoginPage';
+class PrtcLoginPage extends StatelessWidget {
+  static const String ScreenRoute= 'PrtcLoginPage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +17,7 @@ class InstLoginPage extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color(0x47705C53), Color(0x9E36251D)],
+              colors: [Color(0xFFE9EAC6), Color(0xFF94B48F)],
               stops: [0.1, 0.9],
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
@@ -24,7 +26,7 @@ class InstLoginPage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                child: Mu3eenWightLogo(),
+                child: Mu3eenBlackLogo(),
               ),
               SizedBox(
                 height: 75,
@@ -45,7 +47,7 @@ class InstLoginPage extends StatelessWidget {
                       ),
                       CSfieldEmail('Email',''),
                       CSPassword('Password', ''),
-                      CSButton('Login',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, InstHomePage.ScreenRoute);}),
+                      CSButton('Login',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, PrtcOTPPage.ScreenRoute);}),
                       Center(
                         child: TextButton(onPressed: (){},
                           child: Text(

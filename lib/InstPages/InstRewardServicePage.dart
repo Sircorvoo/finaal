@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../InstAddCS.dart';
 import 'InstSettingsPage.dart';
 import 'InstHomePage.dart';
-import '../InstHomeWidgets.dart';
+import '../HomeWidgets.dart';
 import 'InstLoginPage.dart';
 import 'InstRegisterPage.dart';
 import '../InstaAddCSWidgets.dart';

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import '../InstAddCS.dart';
-import 'InstHomePage.dart';
+import '../InstPages/InstHomePage.dart';
+//import 'InstHomePage.dart';
 import '../HomeWidgets.dart';
 import '../InstaAddCSWidgets.dart';
 import '../InputField.dart';
-import '../MainCardWidgets.dart';
+import 'PrtcOTPPage.dart';
 
-
-class InstEditpage extends StatelessWidget {
-  static const String ScreenRoute= 'InstEditpage';
+class PrtcRegisterPage extends StatelessWidget {
+  static const String ScreenRoute= 'PrtcRegisterPage';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +15,7 @@ class InstEditpage extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color(0x47705C53), Color(0x9E36251D)],
+              colors: [Color(0xFFE9EAC6), Color(0xFF94B48F)],
               stops: [0.1, 0.9],
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
@@ -29,7 +28,7 @@ class InstEditpage extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    child: Mu3eenWightLogo(),
+                    child: Mu3eenBlackLogo(),
                   ),
                   SizedBox(
                     height: 75,
@@ -43,17 +42,17 @@ class InstEditpage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Row(
-                          children: [
-                            Header('assets/PPL.png', 'Add Community Services')
-                          ],
-                        ),
                         SizedBox(
-                          height: 20,
+                          height: 15,
                         ),
-                        for(int i = 0 ; i <10; i++)
-                        mainCard(1, 'Organizing the vaccine center',
-                            'assets/MOH.png', 'Riyadh', '24 Nov', '30 Nov','Edit',0xff909090 , 'Delete',0xFFAF2E2E)
+                        CSfield('First Name', ''),
+                        CSfield('Last Name', ''),
+                        CSfieldEmail('Email', ''),
+                        CSPhoneFiled('Phone Number', ''),
+                        CSPassword('Password', ''),
+                        CSPassword('Confirm Password', ''),
+                        CSButton('Create Account',0xFFF7F6F5,0xFF9B9A93,() {Navigator.pushNamed(context, PrtcOTPPage.ScreenRoute);}),
+
                       ],
                     ),
                   ),

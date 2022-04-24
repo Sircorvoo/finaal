@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import '../InstAddCS.dart';
-import '../PrtcPage/PrtcIntroPage.dart';
-import 'InstHomePage.dart';
 import '../HomeWidgets.dart';
-import 'InstLoginPage.dart';
-import 'InstRegisterPage.dart';
+//import 'InstLoginPage.dart';
+//import 'InstRegisterPage.dart';
+import '../InstPages/InstIntroPage.dart';
+import '../InstPages/InstLoginPage.dart';
+import '../InstPages/InstRegisterPage.dart';
 import '../InstaAddCSWidgets.dart';
 import '../InputField.dart';
+import 'PrtcLoginPage.dart';
+import 'PrtcRegisterPage.dart';
 
-class InstIntroPage extends StatelessWidget {
-  static const String ScreenRoute= 'InstIntroPage';
-  const InstIntroPage({Key? key}) : super(key: key);
+class PrtcIntroPage extends StatelessWidget {
+  static const String ScreenRoute= 'PrtcIntroPage';
+  const PrtcIntroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class InstIntroPage extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color(0x47705C53), Color(0x9E36251D)],
+              colors: [Color(0xFFE9EAC6), Color(0xFF94B48F)],
               stops: [0.1, 0.9],
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
@@ -37,9 +40,10 @@ class InstIntroPage extends StatelessWidget {
                     children: <Widget>[
                       Container(
                         child: Image.asset(
-                          'assets/wlogo.png',
+                          'assets/blogo.png',
                           width: 150,
                           height: 150,
+                          color: Colors.black.withOpacity(0.8),
                         ),
                       )
                     ],
@@ -53,13 +57,13 @@ class InstIntroPage extends StatelessWidget {
                 child: Container(
                   child: Column(
                     children: [
-                      CSButton('Institution Sign In', 0xFFF7F6F5, 0xFF9B9A93,() {Navigator.pushNamed(context, InstLoginPage.ScreenRoute);}),
+                      CSButton('Sign In', 0xFFF7F6F5, 0x9E36251D,() {Navigator.pushNamed(context, PrtcLoginPage.ScreenRoute);}),
                       CSButton(
-                          'Institution Registration', 0x9E36251D, 0xFFF7F6F5,() {Navigator.pushNamed(context, InstRegisterPage.ScreenRoute);}),
+                          'Create Account', 0x90BEE5B9, 0xFFF7F6F5,() {Navigator.pushNamed(context, PrtcRegisterPage.ScreenRoute);}),
                       Center(
-                        child: TextButton(onPressed: (){Navigator.pushNamed(context, PrtcIntroPage.ScreenRoute);},
+                        child: TextButton(onPressed: (){Navigator.pushNamed(context, InstIntroPage.ScreenRoute);},
                           child: Text(
-                            'Enter As a Particpent',
+                            'Enter As a Inistitution',
                             style: TextStyle(decoration: TextDecoration.underline,
                                 fontSize: 12, color: Color(0x9E36251D)),
                           ),

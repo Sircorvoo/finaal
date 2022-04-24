@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 //import 'InstAddCS.dart';
 import 'InstPages/InstHomePage.dart';
-import 'InstHomeWidgets.dart';
+import 'HomeWidgets.dart';
 import 'InstaAddCSWidgets.dart';
 
 class CSfieldEmail extends StatelessWidget {

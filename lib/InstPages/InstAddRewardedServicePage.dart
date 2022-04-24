@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../InstAddCS.dart';
 import 'InstHomePage.dart';
-import '../InstHomeWidgets.dart';
+import '../HomeWidgets.dart';
 import 'InstRegisterPage.dart';
 import '../InstaAddCSWidgets.dart';
 import '../InputField.dart';
